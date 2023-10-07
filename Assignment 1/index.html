@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo"><img src="./img/logo.jpeg" alt="logo image"></div>
+        <h1>Pizza Store</h1>
+    </header>
+    <!-- form for user input -->
+   <form action="connection.php" method="post">
+    <h1>Add pizza details:</h1>
+   <label for="pizzaSize">Pizza Size:</label>
+        <select id="pizzaSize" name="pizzaSize">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <label id="toppings">Toppings:</label>
+    <div class="checkbox-group">
+        <input type="checkbox" name="TOPPING[]" value="Greenpepper"> Green Pepper
+        <input type="checkbox" name="TOPPING[]" value="Onion"> Onion
+        <input type="checkbox" name="TOPPING[]" value="Tomato"> Tomato
+        <input type="checkbox" name="TOPPING[]" value="BlackOlives"> Black Olives
+        <input type="checkbox" name="TOPPING[]" value="GreenOlives"> Green Olives
+        <input type="checkbox" name="TOPPING[]" value="Mushrooms"> Mushrooms
+        <input type="checkbox" name="TOPPING[]" value="Pepperoni"> Pepperoni
+    </div>
+    <label for="sauce">Select Sauce(s):</label>
+    <div class="checkbox-group">
+        <input type="checkbox" name="SAUCE[]" value="TomatoSauce"> Tomato Sauce
+        <input type="checkbox" name="SAUCE[]" value="PestoSauce"> Pesto Sauce
+        <input type="checkbox" name="SAUCE[]" value="AlfredoSauce"> Alfredo Sauce
+        <input type="checkbox" name="SAUCE[]" value="BBQSauce"> BBQ Sauce
+    </div>
+    <label for="dip">Select Dip(s):</label>
+    <div class="checkbox-group">
+        <input type="checkbox" name="DIP[]" value="GarlicDip"> Garlic Dip
+        <input type="checkbox" name="DIP[]" value="RanchDip"> Ranch Dip
+        <input type="checkbox" name="DIP[]" value="CheeseDip"> Cheese Dip
+    </div>
+     
+        
+        <button type="submit" name="submit">Place Order</button>
+   </form>
+</body>
+</html>
